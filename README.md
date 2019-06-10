@@ -43,4 +43,5 @@ in SubRip format (usually with a .srt extension).*
 
 **An example of a program invocation would be like this**
 > main -v -f "pine_barrens.srt" -o "pine_barrens_out.srt" -i 7000 8200 "Did you wrap the package?" -v -b 3 -v
+
 > The filein must be in the same folder as the executable
