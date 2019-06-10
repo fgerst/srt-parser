@@ -30,6 +30,7 @@ in SubRip format (usually with a .srt extension).*
   - too many characters per second (more than 25)
   - subtitle has more than 2 lines of text
   - less than 75 miliseconds between subtitle i end and subtitle i+1 start.
+  
   If errors are found, the program must print the index of the respective subtitle and a 
   description of the error, and keep validating the file. 
 
