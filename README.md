@@ -13,7 +13,7 @@ in SubRip format (usually with a .srt extension).*
 ![Captura](https://user-images.githubusercontent.com/45186471/59171938-cfe85b00-8b1b-11e9-8772-64504a2e9d2f.JPG)
 
 
-## **The parameters the program can receive:**
+## **Parameters and functionality:**
 
 - -f "filein" ← file is the file name to process
 - -o "fileout" ← fileout is the file name where changes will be saved
@@ -30,11 +30,13 @@ in SubRip format (usually with a .srt extension).*
   - too many characters per second (more than 25)
   - subtitle has more than 2 lines of text
   - less than 75 miliseconds between subtitle i end and subtitle i+1 start.
+  If errors are found, the program must print the index of the respective subtitle and a 
+  description of the error, and keep validating the file. 
 
 ## **The project requirements and the way the parameters are processed:**
 - f parameter is mandatory and cannot repeat
 - o parameter is mandatory if the file is modified with other parameters (all except -v) and cannot repeat
-- the rest of parameters are opcional, and all need to be processed in order
+- the rest of parameters are opcional, all need to be processed , and processed in order
 - parameters are received in any order
 - if there are more than one -f or -o parameter a help message is displayed and the exit code is 1
 - if a mandatory parameter is not received the previous message is displayed adn the exit code is 2
@@ -42,6 +44,6 @@ in SubRip format (usually with a .srt extension).*
 - if the file in or file out cannot be opened or saved the exit code is 4.
 
 **An example of a program invocation would be like this**
-> main -v -f "pine_barrens.srt" -o "pine_barrens_out.srt" -i 7000 8200 "Did you wrap the package?" -v -b 3 -v
+> ./srt_parser -v -f "pine_barrens.srt" -o "pine_barrens_out.srt" -i 7000 8200 "Did you wrap the package?" -v -b 3 -v
 
 *The filein must be in the same folder as the executable*
