@@ -1,4 +1,4 @@
-# srt_parser
+# srt-parser
 Simple C program to modify and verify errors on SubRip subtitles
 
  __*This is the final project of a C language seminar on university. It's a command line program that checks for usual errors on subtitles
