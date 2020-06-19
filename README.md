@@ -40,11 +40,23 @@ in SubRip format (usually with a .srt extension).*__
 - the rest of parameters are opcional, all need to be processed , and processed in order
 - parameters are received in any order
 - if there are more than one -f or -o parameter a help message is displayed and the exit code is 1
-- if a mandatory parameter is not received the previous message is displayed adn the exit code is 2
+- if a mandatory parameter is not received the previous message is displayed and the exit code is 2
 - if a invalid parameter is received the help message is displayed and exit code is 3
 - if the file in or file out cannot be opened or saved the exit code is 4.
 
-**An example of a program invocation would be like this**
-> ./srt_parser -v -f "pine_barrens.srt" -o "pine_barrens_out.srt" -i 7000 8200 "Did you wrap the package?" -v -b 3 -v
+## **Using it**
 
-*The filein must be in the same folder as the executable*
+Clone the repository
+```
+git clone https://github.com/fgerst/srt-parser.git
+```
+Compile the C source code using Makefile and GCC
+```
+cd srt-parser
+make 
+```
+
+**An example of a program invocation would be like this**
+```
+> ./srt_parser -v -f "pine_barrens.srt" -o "pine_barrens_out.srt" -i 7000 8200 "Did you wrap the package?" -v -b 3 -v
+```
