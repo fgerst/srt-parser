@@ -3,8 +3,6 @@ Simple C program to modify and verify errors on SubRip subtitles
 
  __*This is the final project of a C language seminar on university. It's a command line program that checks for usual errors on subtitles in SubRip format (usually with a .srt extension).*__
 
-*🔺Warning! Spanglish code all over the place*
-
 **In the SubRip format, the sequence of subtitles are formatted like this:**
 
 ![Captur2](https://user-images.githubusercontent.com/45186471/59172079-8ea47b00-8b1c-11e9-8413-71444b2002dc.JPG)
